@@ -1,0 +1,18 @@
+.LoaderContainer {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgba(54, 72, 99, 0.4);
+  /* background-attachment: fixed; */
+  z-index: 49;
+  top: 0%;
+  left: 0%;
+}
+
+.loader {
+  height: 10rem;
+  width: auto;
+  position: absolute;
+  top: 45%;
+  left: 42.5%;
+}
