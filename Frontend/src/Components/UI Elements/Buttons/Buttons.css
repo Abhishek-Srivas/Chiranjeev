@@ -1,0 +1,68 @@
+.button-solid {
+  background: #23c8ac;
+  border-radius: 12px;
+  color: #fff;
+  padding: 1rem 2rem;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #23c8ac;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.03em;
+}
+
+.button-solid:hover,
+.button-outline:hover {
+  filter: brightness(95%);
+  box-shadow: 0px 14px 16px rgba(35, 200, 172, 0.2);
+  cursor: pointer;
+  transform: translateY(-2px);
+}
+
+.button-solid:active,
+.button-outline:active {
+  transform: scale(0.9);
+}
+
+.button-outline {
+  background: #fff;
+  border: 1px solid #e6eaee;
+  border-radius: 12px;
+  color: #23c8ac;
+  padding: 1rem 2rem;
+  transition: all 0.4s ease-in-out;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.03em;
+}
+
+.button-fill {
+  padding: 1rem 2rem;
+  border: 1px solid #23c8ac;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.03em;
+  transition: all 0.4s ease-in-out;
+  color: #23c8ac;
+  background: #fff;
+  cursor: pointer;
+}
+
+.button-fill:hover {
+  background: #23c8ac;
+  color: #fff;
+}
+
+@media (max-width: 425px) {
+  .button-outline,
+  .button-fill,
+  .button-solid {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
