@@ -5,6 +5,8 @@ const bodyParser = require("body-parser");
 const app = express();
 dotenv.config();
 
+//import routes
+const HospitalAuth = require("./Routes/HospitalAuth");
 
 const PORT = process.env.PORT || 5000 ;
 
@@ -21,6 +23,8 @@ app.use((req, res, next) =>{
   next();
 });
 
+//call route middleware
+app.use(HospitalAuth);
 
 mongoose
   .connect(process.env.DB_CONNECT, {
