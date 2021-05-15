@@ -7,7 +7,6 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-      
         <Route path="*" component={LandingPage} />
       </Switch>
     </BrowserRouter>
