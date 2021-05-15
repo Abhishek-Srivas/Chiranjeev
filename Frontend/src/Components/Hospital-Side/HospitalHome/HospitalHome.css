@@ -1,0 +1,118 @@
+.HH-Container {
+  padding-top: 2rem;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  color: #364863;
+}
+
+.welcome-img {
+  height: 5.6rem;
+  width: auto;
+  padding-right: 2.5rem;
+}
+
+.HH-h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.03em;
+  margin: 0%;
+}
+
+.HH-h2 {
+  max-width: 70%;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.05em;
+  margin: 0%;
+  padding-top: 1rem;
+}
+
+.HH-h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  letter-spacing: 0.03em;
+  margin: 0%;
+  margin-top: 5rem;
+}
+
+.HH-CardContainer {
+  /* width: 100vw; */
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-top: 2.5rem;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+}
+
+.RequestCard {
+  padding: 2rem;
+  width: 20rem;
+  min-height: 11.8rem;
+  border: 1px solid #e6eaee;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  margin: 0.5rem 0.5rem;
+  position: relative;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08), 0px 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.RC-h1 {
+  margin: 0%;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03em;
+  color: #364863;
+}
+
+.RC-h2 {
+  margin: 0%;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03em;
+  color: #364863;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.btn-2 {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  border: none;
+  border-radius: 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.03em;
+  padding: 0.6rem 1.2rem;
+  background: #23c8ac;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn-1 {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  border: none;
+  border-radius: 1rem;
+  color: #364863;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  letter-spacing: 0.03em;
+  padding: 0.6rem 1.2rem;
+  background: #eef0f4;
+  transition: transform 0.4s ease-in-out;
+}
+
+.btn-1:hover,
+.btn-2:hover {
+  filter: brightness(95%);
+  transform: translateY(-3px);
+  cursor: pointer;
+}

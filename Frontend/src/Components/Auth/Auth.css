@@ -1,0 +1,145 @@
+.HospitalSignup-Container {
+  display: flex;
+  background: url(../../Assets/images/Forms/bg-vector.svg);
+  background-size: 100vw auto;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: Montserrat, sans-serif;
+  overflow-x: hidden;
+}
+
+.HospitalSignupCard-Wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.HospitalSignupHeading-Wrapper h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #364863;
+}
+
+.HospitalSignupHeading-Wrapper p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.03em;
+  text-align: center;
+  /* Dark */
+
+  color: #364863;
+}
+
+.HospitalSignupForm-Input {
+  width: 34.5rem;
+  height: 3.25rem;
+  background: #eef0f4;
+  border-radius: 1rem;
+  margin: 1.2rem 1.9rem 0.5rem 1.9rem;
+  outline: none;
+  border: none;
+  padding: 0px 0px 0px 2rem;
+  line-height: normal;
+  font-family: Montserrat, sans-serif;
+}
+
+.HospitalSignupForm-Input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px #23c8ac;
+}
+
+.HospitalSignup-Button {
+  width: 36rem;
+  /* border: 1px solid black; */
+  margin: 1.2rem 1.9rem 0.5rem 1.9rem;
+}
+
+.Validation {
+  width: 18.75rem;
+  font-size: 0.88rem;
+  padding-left: 2rem;
+  color: red;
+}
+
+.Validation p {
+  margin: 0% !important;
+  padding-top: 0% !important;
+  margin-block-start: 0em !important;
+  margin-block-end: 0em !important;
+}
+
+.bottom-link {
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #364863;
+}
+
+.bottom-link a,
+.forgot-pw a {
+  text-decoration: none;
+  color: #23c8ac;
+}
+
+.bottom-link a:hover .forgot-pw a:hover {
+  filter: brightness(90%);
+}
+
+.link {
+  color: #23c8ac;
+}
+
+.link:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
+
+.forgot-pw {
+  padding-left: 2rem;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+/* .HospitalSignupForm-Input-Invalid{
+    width: 552px;
+    height: 52px;
+    background: #eef0f4;
+    border-radius: 30px;
+    margin: 10px 30px;
+   
+
+    padding: 0px 0px 0px 2rem;
+    border: solid 1px rgb(255, 99, 99);
+} */
+
+@media (max-width: 425px) {
+  .HospitalSignupForm-Input {
+    width: 80vw;
+    margin: 1rem 0rem;
+  }
+
+  .HospitalSignup-Button {
+    width: 100%;
+    margin: 0%;
+    margin-top: 2.5rem;
+  }
+
+  .bottom-link {
+    font-size: 14px;
+    width: 95vw;
+  }
+}
