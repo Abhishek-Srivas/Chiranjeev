@@ -1,0 +1,67 @@
+.HospitalCard-Container {
+  width: 62vw;
+  min-height: 12.3rem;
+  margin: 2rem 1rem;
+  background: #ffffff;
+  border: 1px solid #e6eaee;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  padding: 1.5rem 1.7rem;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: #364863;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08), 0px 1px 6px rgba(0, 0, 0, 0.06);
+}
+
+.HospitalCard-Container:hover {
+  box-shadow: 0px 9px 46px rgba(0, 0, 0, 0.12);
+  transform: translateY(-5px);
+}
+
+.HospitalCard-Details svg {
+  font-size: 1 rem;
+  padding-right: 0.5rem;
+}
+
+.other-details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.hospitalName {
+  font-size: 1.5rem !important;
+  line-height: 1.6rem !important;
+  padding-top: 0% !important;
+}
+
+.location {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding-top: 0% !important;
+}
+
+.contact {
+  position: absolute;
+  left: 1.7rem;
+  bottom: 1rem;
+}
+
+.HospitalCard-Details p {
+  margin: 0%;
+  padding-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .HospitalCard-Container {
+    width: 90vw;
+  }
+}

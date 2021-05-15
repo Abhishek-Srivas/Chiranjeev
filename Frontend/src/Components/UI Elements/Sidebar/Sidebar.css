@@ -1,0 +1,137 @@
+.sidebar {
+  background-color: #364863 !important;
+  width: 17.4rem;
+  color: #fff;
+  position: fixed;
+  height: 100vh;
+  z-index: 40 !important;
+}
+
+.hamburger {
+  position: absolute;
+  top: 1.8rem;
+  left: 1rem;
+  z-index: 50;
+  display: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.hamburger .line {
+  width: 22px;
+  height: 2px;
+  background-color: #364863;
+  display: block;
+  margin: 4px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+.is-active .line:nth-child(2) {
+  opacity: 0;
+  background-color: #ecf0f1 !important;
+}
+
+.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(6px) rotate(45deg);
+  -ms-transform: translateY(6px) rotate(45deg);
+  -o-transform: translateY(6px) rotate(45deg);
+  transform: translateY(6px) rotate(45deg);
+  background-color: #ecf0f1 !important;
+}
+
+.is-active .line:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: translateY(-6px) rotate(-45deg);
+  -o-transform: translateY(-6px) rotate(-45deg);
+  transform: translateY(-6px) rotate(-45deg);
+  background-color: #ecf0f1 !important;
+}
+
+.sidebarLogo {
+  position: absolute;
+  z-index: 50;
+  top: 1rem;
+  display: flex;
+  left: 2rem;
+  padding: 0.38rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.06em;
+}
+
+.sidebarLogo img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.06em;
+}
+
+.sidebarLinks {
+  margin-top: 6.2rem;
+}
+
+.sidebarLinks a {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.activelink,
+.sidelink {
+  border-radius: 0 30px 30px 0;
+  background-color: #23c8ac;
+  color: #fff;
+  margin-right: 1rem;
+  padding: 0.38rem 0 0.38rem 2.5rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.sidelink {
+  background: transparent !important;
+  font-weight: 400 !important;
+}
+
+.sidelink:hover {
+  background-color: rgba(35, 200, 172, 0.3) !important;
+}
+
+.sidebarIcon {
+  font-size: 1.1rem;
+  padding-right: 1.1rem;
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 22rem;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidebarLogo {
+    left: 5rem;
+  }
+}
