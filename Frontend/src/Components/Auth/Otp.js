@@ -33,9 +33,7 @@ const Otp = () => {
     console.log(data);
 
     // console.log(data);
-    // ServerService.hospitalRegistrationOtp(data)
-    axios
-      .post("http://27955b6f6171.ngrok.io/Hospital/VerifyOtp", data)
+    ServerService.hospitalRegistrationOtp(data)
       .then((result) => {
         console.log("123");
         const alertData = {
@@ -103,8 +101,8 @@ const Otp = () => {
       <div className="HospitalSignup-Container">
         <div className="HospitalSignupCard-Wrapper">
           <div className="HospitalSignupHeading-Wrapper">
-            <h1>Welcome Back</h1>
-            <p>Please Login to continue</p>
+            <h1>OTP Verification</h1>
+            <p>Please enter your OTP to continue</p>
           </div>
 
           <form className="HospitalSignupForm" onSubmit={submitHandler}>
