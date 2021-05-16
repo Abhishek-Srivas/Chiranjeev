@@ -60,3 +60,49 @@ exports.getHospitalPlasmaRequests = asyncHandler(async (req, res, next) => {
   //const BedRequests = await BedReqByHospital.find();
 });
 
+exports.BedDonorList = asyncHandler(async (req, res, next) => {
+  const DonorList = await DonationBed.find().exec();
+  console.log(DonorList);
+  res.status(200).json({ DonorList: DonorList });
+});
+exports.PlasmaDonorList = asyncHandler(async (req, res, next) => {
+  const DonorList = await DoantionPlasma.find().exec();
+  console.log(DonorList);
+  res.status(200).json({ DonorList: DonorList });
+});
+
+exports.SearchInBedRequests = asyncHandler(async (req, res, next) => {
+  const BedReq = await BedReqByHospital.find()
+    .populate(
+      "HospitalDetails",
+      "HospitalName Contact State City Address InchargeName"
+    )
+    .exec();
+  const BedArray = [];
+
+  BedReq.forEach((element) => {
+    if (element.HospitalDetails.City.match(req.body.City)) {
+      BedArray.push(element);
+    }
+  });
+
+  return res.status(200).json({ BedReq: BedArray });
+});
+
+exports.SearchInPlasmaRequests = asyncHandler(async (req, res, next) => {
+  const PlasmaReq = await PlasmaReqByHospital.find()
+    .populate(
+      "HospitalDetails",
+      "HospitalName Contact State City Address InchargeName"
+    )
+    .exec();
+
+  const PlasmaArray = [];
+
+  PlasmaReq.forEach((element) => {
+    if (element.HospitalDetails.City.match(req.body.City)) {
+      PlasmaArray.push(element);
+    }
+  });
+  return res.status(200).json({ PlasmaReq: PlasmaArray });
+});
