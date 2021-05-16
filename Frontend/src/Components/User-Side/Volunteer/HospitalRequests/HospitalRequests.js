@@ -37,11 +37,11 @@ const HospitalRequests = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const data = { city: city };
+    const data = { City: city };
     if (props.type === "Bed") {
       ServerService.HospitalRequestList("Bed", data)
         .then((res) => {
-          // console.log(res);
+          console.log(res);
           setHospitals(res.data.BedReq);
           setResults(true);
         })
@@ -51,7 +51,7 @@ const HospitalRequests = (props) => {
     } else {
       ServerService.HospitalRequestList("Plasma", data)
         .then((res) => {
-          // console.log(res);
+          console.log(res);
           setHospitals(res.data.PlasmaReq);
           setResults(true);
         })
@@ -72,7 +72,6 @@ const HospitalRequests = (props) => {
 
   let HospitalList;
   if (hospitals) {
-    console.log(hospitals);
     HospitalList = hospitals.map((data, index) => {
       return (
         <HospitalRequestCard
