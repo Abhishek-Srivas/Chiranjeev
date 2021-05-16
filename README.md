@@ -24,6 +24,24 @@ The backend was developed in node.js and express.js. Using some middlewares like
 ## Donate Beds
 ![screencapture-localhost-3000-providebeds-2021-05-16-18_20_35](https://user-images.githubusercontent.com/56830512/118397794-71b34380-b673-11eb-9b1c-e9147304bd99.png)
 
+# Installation
+1. Clone repository:
+```bash
+$ git clone https://github.com/AbhishekSrivas114319/Chiranjeev.git
+```
+
+2. Install dependencies:
+
+```bash
+$ npm i
+```
+3. Open `.env` and edit config, if it's necessary.(Put your atlas uri in backend)
+
+4. Run example:
+```bash
+npm start
+```
+### **Note**: cd ./FrontEnd and cd ./Backend, then proceed to step 2.
 
 ## Meet our team :
 1. __Abhishek Srivas__ &nbsp; <a href="https://github.com/AbhishekSrivas114319">Github</a> <a href="https://www.linkedin.com/in/abhishek-srivas-8421611a1/">Linkedin</a>
