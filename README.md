@@ -12,6 +12,18 @@ The backend was developed in node.js and express.js. Using some middlewares like
 # Accomplishments that we're proud of
 *Finished the project on time <br>
 *As a team we enjoyed the process<br> *Trust our idea
+# Screenshots of the project:
+## Landing Page
+![screencapture-localhost-3000-2021-05-16-18_11_20](https://user-images.githubusercontent.com/56830512/118397719-0ff2d980-b673-11eb-90bc-75c0d6143c5f.png)
+## Hospital Dashboard
+![screencapture-localhost-3000-hospital-home-2021-05-16-18_13_40](https://user-images.githubusercontent.com/56830512/118397767-4fb9c100-b673-11eb-88d7-57a3b81471ab.png)
+## Edit Detail
+![screencapture-localhost-3000-hospital-editdetails-2021-05-16-18_14_03](https://user-images.githubusercontent.com/56830512/118397771-534d4800-b673-11eb-9cb0-11450ac7daa7.png)
+## Find Hospital For Patient
+![screencapture-localhost-3000-patienthome-2021-05-16-18_11_48](https://user-images.githubusercontent.com/56830512/118397775-55afa200-b673-11eb-8146-4048c01000a4.png)
+## Donate Beds
+![screencapture-localhost-3000-providebeds-2021-05-16-18_20_35](https://user-images.githubusercontent.com/56830512/118397794-71b34380-b673-11eb-9b1c-e9147304bd99.png)
+
 
 ## Meet our team :
 1. __Abhishek Srivas__ &nbsp; <a href="https://github.com/AbhishekSrivas114319">Github</a> <a href="https://www.linkedin.com/in/abhishek-srivas-8421611a1/">Linkedin</a>
