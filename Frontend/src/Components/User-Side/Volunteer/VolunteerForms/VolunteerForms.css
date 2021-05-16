@@ -1,0 +1,76 @@
+.VF-Container {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  font-family: Montserrat, sans-serif;
+}
+
+.VF-heading {
+  display: flex;
+}
+
+.VF-heading img {
+  width: 6.6rem;
+  height: auto;
+}
+.VF-h1 {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  margin: 0%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #364863;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+}
+.VF-h2 {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.03em;
+  color: #364863;
+  text-align: center;
+  margin: 0%;
+  padding-top: 0.5rem;
+  font-weight: 500;
+}
+
+.VF-Container select {
+  width: 16rem;
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: Montserrat, sans-serif;
+  color: #364863;
+  line-height: normal;
+  border-radius: 1rem;
+  height: 3.25rem;
+  margin: 1.2rem 2rem 0.5rem 1.8rem;
+  border: 2px solid transparent;
+  background: #eef0f4;
+  padding: 0px 0px 0px 2rem;
+}
+
+.VF-Container select:focus {
+  outline: none;
+  border: 2px solid #23c8ac;
+}
+
+.VF-Container option[value=""][disabled] {
+  display: none;
+}
+
+.VF-Container option {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: Montserrat, sans-serif;
+  color: #364863;
+  line-height: normal;
+}
+
+::-webkit-calendar-picker-indicator {
+  padding-right: 0.7rem;
+}

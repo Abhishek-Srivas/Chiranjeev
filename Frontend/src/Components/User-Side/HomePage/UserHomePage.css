@@ -1,0 +1,88 @@
+.UserHomePage {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fff;
+  overflow-x: hidden;
+  color: #364863;
+  background: url(../../../Assets/images/UserHome-Images/bg-vector.svg)
+    no-repeat;
+  background-size: 100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.UHP-h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  letter-spacing: 0.02em;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.search-form {
+  margin-top: 4rem;
+  display: inline-flex;
+  width: 100vw;
+  justify-content: center;
+}
+
+.search-form input {
+  width: 38vw;
+  border-radius: 1rem 0 0 1rem;
+  height: 3.5rem;
+  background: #eef0f4;
+  border: none;
+  padding-left: 1rem;
+}
+
+.search-form input:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 1px #23c8ac;
+}
+
+.search-form input::placeholder {
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: normal;
+  letter-spacing: 0.03em;
+  color: #929292;
+}
+
+.submit-button {
+  width: 4rem;
+  border: none;
+  background: #23c8ac;
+  border-radius: 0px 1rem 1rem 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card-list {
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.search-results {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.13rem;
+  line-height: 1.37rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #364863;
+  opacity: 0.5;
+}
+
+@media (max-width: 425px) {
+  .UHP-h1 {
+    padding: 0% 5vw;
+  }
+  .search-form input {
+    width: 70vw;
+  }
+}
