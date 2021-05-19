@@ -17,6 +17,7 @@
   line-height: 2.2rem;
   letter-spacing: 0.03em;
   margin: 0%;
+  width: 90%;
 }
 
 .HH-h2 {
@@ -115,4 +116,10 @@
   filter: brightness(95%);
   transform: translateY(-3px);
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .HH-Container {
+    margin-top: 5rem;
+  }
 }

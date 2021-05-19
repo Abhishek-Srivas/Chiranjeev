@@ -5,6 +5,7 @@ import { ButtonSolid } from "../../../UI Elements/Buttons/Buttons";
 import Alert from "../../../UI Elements/Alerts/Alerts";
 import { Redirect } from "react-router-dom";
 import ServerService from "../../../../ServerService";
+import Loader from "../../../UI Elements/Loader/Loader";
 
 const details = {
   DonorName: "",
@@ -71,7 +72,8 @@ const BedForm = () => {
     return <Redirect to={`/${redirect}`} />;
   }
   return (
-    <React.Fragment>
+    <div style={{ position: "relative" }}>
+      <Loader />
       <div className="VF-Container">
         <div className="VF-heading">
           <img src={handDip} alt="image" />
@@ -132,7 +134,7 @@ const BedForm = () => {
         </div>
       </div>
       {success ? <Alert alertdata={alertdata} /> : ""}
-    </React.Fragment>
+    </div>
   );
 };
 

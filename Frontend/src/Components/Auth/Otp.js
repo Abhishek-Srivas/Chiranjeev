@@ -114,8 +114,8 @@ const Otp = () => {
               placeholder="Enter OTP"
               name="otp"
             />
-            <p className="bottom-link">
-              Didn't receive OTP?
+            <p className="resend-otp">
+              Didn't receive OTP?{" "}
               <span className="link" onClick={resendOtp}>
                 Resend OTP{" "}
               </span>

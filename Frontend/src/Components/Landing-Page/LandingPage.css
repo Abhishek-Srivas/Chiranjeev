@@ -375,5 +375,23 @@ a {
 .Footer-Bottom {
   width: 100%;
   text-align: center;
-  padding: 1rem 0rem;
+  padding: 0.8rem 0rem;
+}
+
+hr {
+  width: 100vw;
+  background: #e6eaee;
+  height: 1px;
+  border: none !important;
+}
+
+@media (max-width: 425px) {
+  .Footer-Top {
+    padding: 1rem 6.8vw;
+    width: 85vw;
+  }
+
+  .Footer-Top p {
+    width: 90%;
+  }
 }

@@ -15,7 +15,7 @@ import Logo from "../../../Assets/images/Logo.svg";
 class SideBar extends React.Component {
   state = {
     sidebarDocked: true,
-    sidebarOpen: true,
+    sidebarOpen: false,
   };
 
   componentDidMount() {
@@ -34,12 +34,7 @@ class SideBar extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div
-          className={
-            this.state.sidebarOpen ? "hamburgprops-active" : "hamburger"
-          }
-          onClick={() => this.onSetSidebarOpen()}
-        >
+        <div className="hamburger" onClick={() => this.onSetSidebarOpen()}>
           <span className="line"></span>
           <span className="line"></span>
           <span className="line"></span>
@@ -50,7 +45,10 @@ class SideBar extends React.Component {
             <span
               style={{
                 margin: "auto 1rem",
-                color: this.state.sidebarOpen ? "#fff" : "#364863",
+                color:
+                  this.state.sidebarOpen || this.state.sidebarDocked
+                    ? "#fff"
+                    : "#364863",
               }}
             >
               Chiranjeev
@@ -162,7 +160,7 @@ class SideBar extends React.Component {
           onSetOpen={this.onSetSidebarOpen}
           shadow={false}
         >
-          {this.props.children}
+          <div className="root">{this.props.children}</div>
         </Sidebar>
       </React.Fragment>
     );

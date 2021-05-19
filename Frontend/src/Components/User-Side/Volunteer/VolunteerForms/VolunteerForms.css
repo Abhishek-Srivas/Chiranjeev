@@ -74,3 +74,14 @@
 ::-webkit-calendar-picker-indicator {
   padding-right: 0.7rem;
 }
+
+@media (max-width: 426px) {
+  .VF-Container .input-small {
+    width: 38vw !important;
+  }
+
+  .VF-Container select {
+    width: 44vw !important;
+    margin: 1.2rem 0.5rem 0.5rem 1rem;
+  }
+}

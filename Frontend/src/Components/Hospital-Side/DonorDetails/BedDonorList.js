@@ -36,7 +36,7 @@ const BedDonorList = () => {
   }
 
   return (
-    <div>
+    <div className="DL-Container">
       <p className="DonorHeading">Bed Donors</p>
       {DonorList}
     </div>

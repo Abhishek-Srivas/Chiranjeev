@@ -10,7 +10,9 @@ const Loader = (props) => {
     <React.Fragment>
       {promiseInProgress === true ? (
         <div className="LoaderContainer">
-          <img src={corona} className="loader" alt="spinner" />
+          <div className="loader-bg">
+            <img src={corona} className="loader" alt="spinner" />
+          </div>
         </div>
       ) : null}
     </React.Fragment>

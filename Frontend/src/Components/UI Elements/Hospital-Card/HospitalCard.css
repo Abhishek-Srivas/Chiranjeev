@@ -33,6 +33,12 @@
   margin-bottom: 1rem;
 }
 
+.HN-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .hospitalName {
   font-size: 1.5rem !important;
   line-height: 1.6rem !important;
@@ -44,6 +50,7 @@
   top: 1.5rem;
   right: 1.5rem;
   padding-top: 0% !important;
+  width: 40%;
 }
 
 .contact {
@@ -63,5 +70,14 @@
 @media (max-width: 700px) {
   .HospitalCard-Container {
     width: 90vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .location {
+    position: relative;
+    width: 100%;
+    margin-left: 1.5rem !important;
+    margin-bottom: 1rem !important;
   }
 }

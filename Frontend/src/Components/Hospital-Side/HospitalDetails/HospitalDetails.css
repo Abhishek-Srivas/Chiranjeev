@@ -112,6 +112,10 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 1.5rem 1.9rem 0.5rem 1.9rem;
 }
 
+.dropdown {
+  width: 36rem !important;
+}
+
 select {
   cursor: pointer;
 }
@@ -138,6 +142,23 @@ select {
   .HD-buttonContainer {
     width: 90vw;
     margin: 2rem auto;
+  }
+
+  .ED-Container input {
+    width: 80vw !important;
+  }
+
+  .ED-Container .HD-select-wrapper select {
+    width: 39vw !important;
+    margin: 1.2rem;
+  }
+
+  .ED-Container .HD-buttonContainer {
+    width: 80vw;
+  }
+
+  .dropdown {
+    width: 40vw !important;
   }
 }
 

@@ -38,6 +38,7 @@ const HospitalRequests = (props) => {
   const submitHandler = (e) => {
     e.preventDefault();
     const data = { City: city };
+    console.log(data);
     if (props.type === "Bed") {
       ServerService.HospitalRequestList("Bed", data)
         .then((res) => {

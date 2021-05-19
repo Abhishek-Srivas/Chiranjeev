@@ -6,10 +6,12 @@ const HospitalCard = (props) => {
   return (
     <div className="HospitalCard-Container">
       <div className="HospitalCard-Details">
-        <p className="hospitalName">{props.name}</p>
-        <p className="location">
-          <LocationOn /> {props.address}
-        </p>
+        <div className="HN-container">
+          <p className="hospitalName">{props.name}</p>
+          <p className="location">
+            <LocationOn /> {props.address}
+          </p>
+        </div>
         <p>
           <Hotel /> {props.beds}
         </p>

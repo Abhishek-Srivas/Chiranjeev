@@ -3,3 +3,12 @@
   margin-top: 1.5rem;
   margin-left: 4rem;
 }
+
+@media (max-width: 768px) {
+  .hospitalContent {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 1.5rem;
+  }
+}

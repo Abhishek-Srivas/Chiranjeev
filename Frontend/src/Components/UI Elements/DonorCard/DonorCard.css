@@ -42,3 +42,9 @@
   box-shadow: 0px 9px 46px rgba(0, 0, 0, 0.12);
   transform: translateY(-5px);
 }
+
+@media (max-width: 700px) {
+  .DonorCard {
+    width: 85vw;
+  }
+}

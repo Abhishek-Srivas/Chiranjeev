@@ -37,7 +37,7 @@ const PlasmaDonorList = () => {
   }
 
   return (
-    <div>
+    <div className="DL-Container">
       <p className="DonorHeading">Plasma Donors</p>
       {DonorList}
     </div>

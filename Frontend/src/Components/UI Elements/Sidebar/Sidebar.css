@@ -31,27 +31,6 @@
   cursor: pointer;
 }
 
-.is-active .line:nth-child(2) {
-  opacity: 0;
-  background-color: #ecf0f1 !important;
-}
-
-.is-active .line:nth-child(1) {
-  -webkit-transform: translateY(6px) rotate(45deg);
-  -ms-transform: translateY(6px) rotate(45deg);
-  -o-transform: translateY(6px) rotate(45deg);
-  transform: translateY(6px) rotate(45deg);
-  background-color: #ecf0f1 !important;
-}
-
-.is-active .line:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: translateY(-6px) rotate(-45deg);
-  -o-transform: translateY(-6px) rotate(-45deg);
-  transform: translateY(-6px) rotate(-45deg);
-  background-color: #ecf0f1 !important;
-}
-
 .sidebarLogo {
   position: absolute;
   z-index: 50;
@@ -133,5 +112,15 @@
 
   .sidebarLogo {
     left: 5rem;
+    font-size: 1.8rem;
+  }
+  .sidebarLogo img {
+    width: 3.5rem;
+    height: auto;
+  }
+
+  .root {
+    width: 95vw;
+    overflow-x: hidden !important;
   }
 }

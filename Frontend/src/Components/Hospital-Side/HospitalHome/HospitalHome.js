@@ -75,6 +75,10 @@ const HospitalHome = () => {
     });
   }
 
+  if (bedRequests && plasmaRequests) {
+    BedReqs = <h2>You have not made any Requests yet!</h2>;
+  }
+
   return (
     <div className="HH-Container">
       <div style={{ display: "flex" }}>

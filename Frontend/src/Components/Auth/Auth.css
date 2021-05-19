@@ -89,6 +89,15 @@
   color: #364863;
 }
 
+.resend-otp {
+  padding: 0.5rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #364863;
+}
+
 .bottom-link a,
 .forgot-pw a {
   text-decoration: none;

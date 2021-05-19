@@ -6,6 +6,7 @@ import NavbarSolid from "../../UI Elements/Navbar/Navbar-Solid";
 import { ButtonSolid } from "../../UI Elements/Buttons/Buttons";
 import ServerService from "../../../ServerService";
 import Alert from "../../UI Elements/Alerts/Alerts";
+import Loader from "../../UI Elements/Loader/Loader";
 
 const details = {
   InchargeName: "",
@@ -77,7 +78,8 @@ const HospitalDetails = () => {
     return <Redirect to={`/${redirect}`} />;
   }
   return (
-    <React.Fragment>
+    <div style={{ position: "relative" }}>
+      <Loader />
       {/* HD here refers to hospital details */}
       <NavbarSolid navlink="/patienthome" linkName="Continue as Patient" />
       <div className="HospitalDetailsContainer">
@@ -174,7 +176,7 @@ const HospitalDetails = () => {
               <select
                 onChange={changeHandler}
                 name="Vaccineavailability"
-                style={{ width: "36.5rem" }}
+                className="dropdown"
               >
                 <option value="" disabled selected>
                   Vaccines
@@ -194,7 +196,7 @@ const HospitalDetails = () => {
         </div>
       </div>
       {success ? <Alert alertdata={alertdata} /> : ""}
-    </React.Fragment>
+    </div>
   );
 };
 
