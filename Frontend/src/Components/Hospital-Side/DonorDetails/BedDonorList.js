@@ -3,6 +3,7 @@ import ServerService from "../../../ServerService";
 import DonorCard from "../../UI Elements/DonorCard/DonorCard";
 import "./DonorDetails.css";
 
+var change = true;
 const BedDonorList = () => {
   const [donorList, setDonorList] = useState("");
 

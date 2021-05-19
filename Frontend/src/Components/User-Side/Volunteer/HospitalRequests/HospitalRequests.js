@@ -12,20 +12,20 @@ const HospitalRequests = (props) => {
     if (props.type === "Bed") {
       ServerService.HospitalBedRequests()
         .then((res) => {
-          // console.log(res);
+          console.log(res);
           setHospitals(res.data.BedReq);
         })
         .catch((err) => {
-          console.log(err);
+          console.log(err.response);
         });
     } else {
       ServerService.HospitalPlasmaRequests()
         .then((res) => {
-          // console.log(res);
+          console.log(res);
           setHospitals(res.data.PlasmaReq);
         })
         .catch((err) => {
-          console.log(err);
+          console.log(err.response);
         });
     }
   }, []);
@@ -37,16 +37,28 @@ const HospitalRequests = (props) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const data = { city: city };
-    // ServerService.hospitalSearchList(data)
-    //   .then((res) => {
-    //     console.log(res);
-    //     setHospitals(res.data.List);
-    //     setResults(true);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
+    const data = { City: city };
+    if (props.type === "Bed") {
+      ServerService.HospitalRequestList("Bed", data)
+        .then((res) => {
+          console.log(res);
+          setHospitals(res.data.BedReq);
+          setResults(true);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    } else {
+      ServerService.HospitalRequestList("Plasma", data)
+        .then((res) => {
+          console.log(res);
+          setHospitals(res.data.PlasmaReq);
+          setResults(true);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   };
 
   let numberOfHospitals;
@@ -59,7 +71,7 @@ const HospitalRequests = (props) => {
   else numberOfHospitals = <p></p>;
 
   let HospitalList;
-  if (hospitals)
+  if (hospitals) {
     HospitalList = hospitals.map((data, index) => {
       return (
         <HospitalRequestCard
@@ -79,6 +91,7 @@ const HospitalRequests = (props) => {
         />
       );
     });
+  }
 
   return (
     <div className="HR-Container">

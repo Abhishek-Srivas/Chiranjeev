@@ -79,6 +79,10 @@ class ServerService {
   HospitalPlasmaRequests() {
     return trackPromise(axios.get(BASE_URL + "/HospitalPlasmaRequests"));
   }
+
+  HospitalRequestList(type, data) {
+    return trackPromise(axios.post(BASE_URL + "/" + type + "Req/City", data));
+  }
 }
 
 export default new ServerService();

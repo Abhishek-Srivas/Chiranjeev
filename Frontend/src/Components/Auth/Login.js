@@ -144,9 +144,9 @@ const HospitalLogin = () => {
             <div className="Validation">
               {errors.passwordS && <p>{errors.passwordS}</p>}
             </div>
-            {/* <p className="forgot-pw">
+            <p className="forgot-pw">
               <Link to="/forgotPassword">Forgot Password? </Link>
-            </p> */}
+            </p>
             <div className="HospitalSignup-Button">
               <ButtonSolid type="submit" onClick={validate} width="100%">
                 Login

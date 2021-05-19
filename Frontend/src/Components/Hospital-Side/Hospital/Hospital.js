@@ -6,8 +6,8 @@ import PlasmaDonorList from "../DonorDetails/PlasmaDonorList";
 import EditDetails from "../HospitalDetails/EditDetails";
 import HospitalHome from "../HospitalHome/HospitalHome";
 import MakeRequest from "../MakeRequest/MakeRequest";
-import Loader from "../../UI Elements/Loader/Loader";
 import "./Hospital.css";
+import Loader from "../../UI Elements/Loader/Loader";
 
 const Hospital = (props) => {
   const [active, setActive] = useState("");

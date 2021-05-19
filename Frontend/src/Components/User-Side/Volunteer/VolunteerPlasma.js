@@ -28,7 +28,7 @@ const VolunteerPlasma = () => {
         >
           <div className="box"></div>
           <div className="switchContent">
-            <span>Donate Beds</span>
+            <span>Donate Plasma</span>
             <span>Hospital Requests</span>
           </div>
         </div>

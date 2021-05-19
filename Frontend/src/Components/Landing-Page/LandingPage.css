@@ -41,7 +41,7 @@
   color: #ffffff;
   width: 34rem;
   margin: auto;
-  margin-top: 0.8rem;
+  margin-top: 1.5rem;
 }
 
 .bg-elements-left {
@@ -248,7 +248,7 @@ a {
 
 .Volunteer-HandStone {
   position: absolute;
-  left: 15.1rem;
+  left: 8rem;
   bottom: 0%;
   opacity: 0.3;
 }
@@ -329,4 +329,51 @@ a {
     margin-bottom: 4rem;
     width: 90vw;
   }
+}
+
+/* Footer */
+
+.Footer {
+  width: 100vw;
+  overflow-x: hidden;
+  background: #131e2d;
+  color: #fff;
+}
+
+.Footer-Top {
+  padding: 2rem 8rem;
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Footer-Top p {
+  width: 70%;
+}
+
+.Footer-h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  width: max-content !important;
+}
+
+.Footer-h2 {
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+}
+
+.social-icons {
+  display: flex;
+}
+.social-icons svg {
+  font-size: 1.7rem;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+.Footer-Bottom {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0rem;
 }
