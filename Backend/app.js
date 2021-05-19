@@ -7,13 +7,14 @@ dotenv.config();
 
 //import routes
 const HospitalAuth = require("./Routes/HospitalAuth");
+const Donation = require("./Routes/Donation");
+const HospitalReq = require("./Routes/HospitalReq");
+const HospitalSearch = require("./Routes/Hospital");
 
-const PORT = process.env.PORT || 5000 ;
+const PORT = process.env.PORT || 3000 ;
 
-// Express middleware that allows POSTing data
+// Express middleware that allows Parsing data
 app.use(express.json());
-app.use(bodyParser.json({limit: '50mb', extended: true}));
-app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
 //To remove CROS (cross-resource-origin-platform) problem
 app.use((req, res, next) =>{   
@@ -23,8 +24,12 @@ app.use((req, res, next) =>{
   next();
 });
 
+
 //call route middleware
 app.use(HospitalAuth);
+app.use(Donation);
+app.use(HospitalReq);
+app.use(HospitalSearch);
 
 mongoose
   .connect(process.env.DB_CONNECT, {
