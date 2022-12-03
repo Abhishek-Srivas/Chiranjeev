@@ -1,7 +1,8 @@
 import axios from "axios";
 import { trackPromise } from "react-promise-tracker";
 // export const BASE_URL = "http://27955b6f6171.ngrok.io";
-export const BASE_URL = "https://chiranjeev.herokuapp.com";
+// export const BASE_URL = "https://chiranjeev.herokuapp.com";
+export const BASE_URL = "https://chiranjeev-backend.onrender.com";
 
 class ServerService {
   hospitalLogin(data) {
